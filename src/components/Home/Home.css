@@ -1,0 +1,20 @@
+.hero-section{
+    text-align: left;
+    align-items: center;
+    margin-top: 20px;
+    padding: 50px 0;
+}
+.hero-title{
+    font-size: 80px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #2a2d36;
+    font-family: 'Kanit', sans-serif;
+    line-height: 80px;
+}
+.hero-title span{
+    color: #A8EA06;
+}
+.banner{
+    max-width: 100%;
+}

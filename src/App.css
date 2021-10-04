@@ -1,5 +1,13 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+}
+.app{
+  font-family: 'Kanit', sans-serif;
+}
+.main-container{
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .App-logo {
