@@ -5,13 +5,13 @@ import './Header.css';
 
 const Header = () => {
     const activeStyle = {
-        borderBottom:"1px solid #A8EA05"
+        borderBottom:"2px solid #A8EA05"
     }
     return (
-        <Grid className="header" container spacing={2}>
+        <Grid style={{alignItems:"center"}} container spacing={2}>
             <Grid item md={4}>
-                <NavLink className="logo" to="/">
-                    <h1 className="logo-text"><span>e</span>Dus</h1>
+                <NavLink style={{textDecoration:"none"}} to="/">
+                    <h1 style={{fontSize:"100px", color:"#2A2D36"}}><span style={{color:"#A8EA05"}}>e</span>Dus</h1>
                 </NavLink>
             </Grid>
             <Grid className="nav" item md={8}>

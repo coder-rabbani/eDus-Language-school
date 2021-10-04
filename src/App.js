@@ -6,6 +6,8 @@ import NotFound from './components/NotFound/NotFound';
 import About from './components/About/About';
 import Services from './components/Services/Services';
 import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
+import ServiceDetails from './components/Details/ServiceDetails';
 
 function App() {
   return (
@@ -32,6 +34,7 @@ function App() {
             <NotFound></NotFound>
           </Route>
         </Switch>
+        <Footer></Footer>
       </Router>
     </div>
   );
