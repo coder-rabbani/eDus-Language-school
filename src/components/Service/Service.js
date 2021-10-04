@@ -1,8 +1,17 @@
 import { Button, Card, CardActions, CardContent, CardMedia, Grid, Typography } from '@mui/material';
 import React from 'react';
+import { useHistory } from 'react-router';
 
 const Service = (props) => {
-    const {name, img, description} = props.language;
+    const {id, name, img, description} = props.language;
+
+    const url = `/service/${id}`;
+
+    const history = useHistory();
+
+    const handleDetails = () =>{
+        history.push(url);
+    }
     return (
         <Grid item xs={6} md={6}>
             <Card sx={{margin:"10px"}}>
@@ -21,7 +30,7 @@ const Service = (props) => {
                     </Typography>
                 </CardContent>
                 <CardActions sx={{padding:"0 30px 30px"}}>
-                    <Button sx={{border:"2px solid #A8EA05", color:"black", padding:"10px 30px"}} size="small">Learn More</Button>
+                    <Button onClick={handleDetails}  sx={{border:"2px solid #A8EA05", color:"black", padding:"10px 30px"}} size="small">Learn More</Button>
                 </CardActions>
             </Card>
         </Grid>
