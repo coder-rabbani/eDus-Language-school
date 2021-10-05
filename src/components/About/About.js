@@ -5,6 +5,7 @@ import team from '../../images/about-2.svg';
 import './About.css'
 import { Grid, Typography } from '@mui/material';
 
+//About compnent
 const About = () => {
     return (
         <div>

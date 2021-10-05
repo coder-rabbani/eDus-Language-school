@@ -3,14 +3,18 @@ import React, { useEffect, useState } from 'react';
 import Service from '../Service/Service';
 import './Services.css'
 
+//service component
 const Services = () => {
+    // state declare
     const [languages, setLanguages] = useState([]);
     
+    //use effect hooks for external link
     useEffect(()=>{
         fetch('./language.JSON')
         .then(res=>res.json())
         .then(data => setLanguages(data))
     }, [])
+
     return (
         <div style={{paddingTop:"70px"}}>
             <Typography variant="h3" align="center" sx={{fontSize:45, mb:4, fontWeight:"bold"}} component="h3">

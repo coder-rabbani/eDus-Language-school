@@ -6,6 +6,7 @@ import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import RoomIcon from '@mui/icons-material/Room';
 import {Grid, Typography } from '@mui/material';
 
+//contact component
 const Contact = () => {
     return (
         <div>

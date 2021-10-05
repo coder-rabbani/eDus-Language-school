@@ -3,10 +3,14 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './Header.css';
 
+//header component
 const Header = () => {
+
+    //custom css
     const activeStyle = {
         borderBottom:"2px solid #A8EA05"
     }
+
     return (
         <Grid style={{alignItems:"center"}} container spacing={2}>
             <Grid item md={4}>

@@ -1,8 +1,12 @@
 import { Grid, Typography } from '@mui/material';
 import React from 'react';
 
+//hero section component
 const Hero = (props) => {
+    
+    //object destructuring
     const {title, desc, img} = props
+
     return (
         <Grid sx={{marginTop:5, marginBottom:5, alignItems:"center"}} container spacing={2}>
             <Grid  item xs={6} md={7}>
