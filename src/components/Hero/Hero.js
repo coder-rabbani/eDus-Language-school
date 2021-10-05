@@ -6,7 +6,7 @@ const Hero = (props) => {
     return (
         <Grid sx={{marginTop:5, marginBottom:5, alignItems:"center"}} container spacing={2}>
             <Grid  item xs={6} md={7}>
-                <Typography variant="h2" sx={{fontSize:100, mb:4, fontWeight:900, lineHeight:1, textTransform:"uppercase"}} component="h3">
+                <Typography variant="h2" sx={{fontSize:100, mb:4, fontWeight:700, lineHeight:1, textTransform:"capitalize", fontFamily:"Kanit", color:"#2A2D36"}} component="h3">
                     {title}
                 </Typography>
                 <Typography variant="body2" color="text.secondary" sx={{fontSize:25, mb:4}}>

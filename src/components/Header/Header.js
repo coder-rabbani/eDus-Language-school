@@ -11,8 +11,9 @@ const Header = () => {
         <Grid style={{alignItems:"center"}} container spacing={2}>
             <Grid item md={4}>
                 <NavLink style={{textDecoration:"none"}} to="/">
-                    <h1 style={{fontSize:"100px", color:"#2A2D36"}}><span style={{color:"#A8EA05"}}>e</span>Dus</h1>
+                    <h1 style={{fontSize:"100px", color:"#2A2D36", fontFamily:"Kanit", lineHeight:"100px"}}><span style={{color:"#A8EA05"}}>e</span>Dus</h1>
                 </NavLink>
+                <p style={{fontSize:"22px", color:"#2A2D36", fontFamily:"Kanit", margin:"-10px 0 0 0", letterSpacing:"5px"}}>A Language School</p>
             </Grid>
             <Grid className="nav" item md={8}>
                 <NavLink className="menu-item" activeStyle={activeStyle} to="/home">Home</NavLink>

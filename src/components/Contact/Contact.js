@@ -1,7 +1,10 @@
 import React from 'react';
 import './Contact.css';
-import map from '../../images/contact.svg'
-import { Grid, TextField, Typography } from '@mui/material';
+import map from '../../images/contact.svg';
+import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+import RoomIcon from '@mui/icons-material/Room';
+import {Grid, Typography } from '@mui/material';
 
 const Contact = () => {
     return (
@@ -14,8 +17,21 @@ const Contact = () => {
                     <Typography variant="h2" sx={{fontSize:50, mb:4, fontWeight:900, lineHeight:1, textTransform:"uppercase"}} component="h3">
                     Contact Us
                     </Typography>
-                    <TextField id="standard-basic" label="Name" variant="standard" />
-                    <TextField id="standard-basic" label="Email" variant="standard" />
+
+                    <a style={{textDecoration:"none", color:"black"}} href="mailto:thegolamrabbani@gmail.com"><div href="#" style={{display:"flex"}}>
+                    <MailOutlineIcon/>
+                    <p style={{marginLeft:"10px"}}>thegolamrabbani@gmail.com</p> 
+                    </div></a>
+
+                    <a style={{textDecoration:"none", color:"black"}} href="tel:+8801748565175"><div style={{display:"flex", padding:"20px 0"}}>
+                    <LocalPhoneIcon/>
+                    <p style={{marginLeft:"10px"}}>+8801748565175</p> 
+                    </div></a>
+
+                    <div style={{display:"flex"}}>
+                    <RoomIcon/>
+                    <p style={{marginLeft:"10px"}}>Birganj, Dinajpur, Bangladesh</p> 
+                    </div>
                 </Grid>
             </Grid>
         </div>

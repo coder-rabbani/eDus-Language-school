@@ -1,20 +1,12 @@
-import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router';
+import { Typography } from '@mui/material';
+import React from 'react';
 
 const ServiceDetails = () => {
-    const {id} = useParams();
-
-    const [service, setService] = useState({});
-    const url = `./language.JSON/${id}`
-
-    useEffect(()=>{
-        fetch(url)
-        .then(res => res.json())
-        .then(data=>setService(data))
-    }, []);
     return (
         <div>
-            <h2>{id}</h2>
+            <Typography align="center" variant="h2" sx={{fontSize:100, my:20, fontWeight:900, lineHeight:1, textTransform:"uppercase", color:"#A8EA05"}} component="h3">
+            Language Details are coming soon!
+            </Typography>
         </div>
     );
 };
